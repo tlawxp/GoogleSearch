@@ -1,0 +1,36 @@
+@import "color";
+
+@media screen and (max-width: 576px){
+  section {
+    .main {
+      .GoogleSearch {
+        width: 300px;
+      }
+    }
+  }
+  @keyframes waveHm {
+    0% {
+        height: 0
+    }
+
+    35%,65% {
+        height: 100px
+    }
+
+    100% {
+        height: 0
+    }}
+
+@keyframes waveHd {
+    0% {
+        height: 0
+    }
+
+    35%,65% {
+        height: 50px
+    }
+
+    100% {
+        height: 0
+    }}
+}

@@ -1,0 +1,39 @@
+@import "color";
+
+html {
+  scroll-behavior: smooth;
+}
+::placeholder {
+  color: #ccc;
+}
+::selection {
+  background: map-get($color,"green");
+  color: map-get($color,"black");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  -webkit-touch-callout: none;
+  /* iOS Safari */  -webkit-user-select: none;
+  /* Safari */  -khtml-user-select: none;
+  /* Konqueror HTML */  -moz-user-select: none;
+  /* Old versions of Firefox */  -ms-user-select: none;
+  /* Internet Explorer/Edge */ user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+body {
+  background: linear-gradient(45deg, #08001f, #30197d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: map-get($color,"white");
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+li { list-style: none; }
+h1 { font-size: 2em; }

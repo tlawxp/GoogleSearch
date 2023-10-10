@@ -1,0 +1,325 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../../font/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: Terminus;
+  src: url("../../font/Terminus (TTF) 500.ttf");
+}
+@font-face {
+  font-family: Terminus_Bold;
+  src: url("../../font/Terminus (TTF) Bold 700.ttf");
+}
+@font-face {
+  font-family: Terminus_Italic;
+  src: url("../../font/Terminus (TTF) Italic 500.ttf");
+}
+@font-face {
+  font-family: Terminus_Bold_Italic;
+  src: url("../../font/Terminus (TTF) Bold Italic 700.ttf");
+}
+@font-face {
+  font-family: chapbook;
+  src: url("../../font/Chapbook.ttf");
+}
+@font-face {
+  font-family: Bubblegum;
+  src: url("../../font/Bubblegum.ttf");
+}
+@font-face {
+  font-family: Hacked-KerX;
+  src: url("../../font/Hacked-KerX.ttf");
+}
+@font-face {
+  font-family: FiraCode-Regular;
+  src: url("../../font/FiraCode/ttf/FiraCode-Regular.ttf");
+}
+@font-face {
+  font-family: cardiuma-regular;
+  src: url("../../font/cardiuma-regular.otf");
+}
+@font-face {
+  font-family: Platonica;
+  src: url("../../font/Platonica.otf");
+}
+@font-face {
+  font-family: OnePiece-zAqL;
+  src: url("../../font/OnePiece-zAqL.ttf");
+}
+@font-face {
+  font-family: JlsdatagothicCnc-yyz3;
+  src: url("../../font/JlsdatagothicCnc-yyz3.otf");
+}
+@font-face {
+  font-family: ComicNeue-Regular;
+  src: url("../../font/comic-neue-1.1/ComicNeue-Regular.ttf");
+}
+@font-face {
+  font-family: BLOODSEEKER;
+  src: url("../../font/BLOODSEEKER - DEMO.ttf");
+}
+@font-face {
+  font-family: Poppins-Black;
+  src: url("../../font/Poppins-Black.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::placeholder {
+  color: #ccc;
+}
+
+::selection {
+  background: #4e9;
+  color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+body {
+  background: linear-gradient(45deg, #08001f, #30197d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .main {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 20px 0;
+}
+section .main .GoogleSearch {
+  width: 500px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section .main .GoogleSearch h1 {
+  color: #ccc;
+  text-transform: capitalize;
+}
+section .main .GoogleSearch .SearchBx {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+section .main .GoogleSearch .SearchBx .query {
+  background: rgba(0, 0, 0, 0.4);
+  color: #ccc;
+  width: 100%;
+  padding: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  outline: none;
+  font-size: 16px;
+  border-radius: 30px;
+  padding-left: 45px;
+  padding-right: 60px;
+}
+section .main .GoogleSearch .SearchBx .icon {
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  display: flex;
+  padding: 12px 20px;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  color: #ccc;
+}
+section .main .GoogleSearch .SearchBx .icon i {
+  max-width: 100%;
+}
+section .main .GoogleSearch .searchBtn {
+  background: rgba(0, 0, 0, 0.4);
+  color: #ccc;
+  margin: 0 5px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  outline: none;
+  transition: all 200ms ease;
+}
+section .main .GoogleSearch .searchBtn:hover {
+  transform: scale(0.9);
+}
+
+/* Wave Animation */
+.wvC {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.wvS {
+  position: relative;
+}
+
+.wvS .waves {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.wvH {
+  position: relative;
+  height: 0;
+  background: rgba(0, 0, 0, 0.6);
+  animation: waveHd 7s infinite;
+}
+
+.plx > use {
+  fill: rgba(0, 0, 0, 0.6);
+  animation: waveMove 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.plx > use:nth-child(1) {
+  opacity: 0.7;
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.plx > use:nth-child(2) {
+  opacity: 0.5;
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.plx > use:nth-child(3) {
+  opacity: 0.3;
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.plx > use:nth-child(4) {
+  opacity: 1;
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@media (max-width: 896px) {
+  .wvH {
+    animation: waveHm 7s infinite;
+  }
+}
+.drK .wvH {
+  background: #343435;
+}
+
+.drK .plx > use {
+  fill: #343435;
+}
+
+@keyframes waveMove {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+@keyframes waveHm {
+  0% {
+    height: 0;
+  }
+  35%, 65% {
+    height: 200px;
+  }
+  100% {
+    height: 0;
+  }
+}
+@keyframes waveHd {
+  0% {
+    height: 0;
+  }
+  35%, 65% {
+    height: 100px;
+  }
+  100% {
+    height: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  section .main .GoogleSearch {
+    width: 300px;
+  }
+  @keyframes waveHm {
+    0% {
+      height: 0;
+    }
+    35%, 65% {
+      height: 100px;
+    }
+    100% {
+      height: 0;
+    }
+  }
+  @keyframes waveHd {
+    0% {
+      height: 0;
+    }
+    35%, 65% {
+      height: 50px;
+    }
+    100% {
+      height: 0;
+    }
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

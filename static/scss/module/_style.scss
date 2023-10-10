@@ -1,0 +1,185 @@
+@import "color";
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .main {
+    border: 1px solid rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 20px 0;
+    .GoogleSearch {
+      width: 500px;
+      margin: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; 
+      h1 {
+        color: #ccc;
+        text-transform: capitalize;
+      }
+      .SearchBx {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        .query {
+          background: rgba(0,0,0,0.4);
+          color: #ccc;
+          width: 100%;
+          padding: 13px;
+          border: 1px solid rgba(0,0,0,0.8);
+          outline: none;
+          font-size: 16px;
+          border-radius: 30px; 
+          padding-left: 45px;
+          padding-right: 60px;
+        }
+        .icon {
+          position: absolute;
+          top: 5px;
+          width: 100%;
+          display: flex;
+          padding: 12px 20px;
+          justify-content: space-between;
+          align-items: center;
+          pointer-events: none;
+          color: #ccc;
+          i {
+            max-width: 100%;
+          }
+        }
+      }
+      .searchBtn {
+        background: rgba(0,0,0,0.4);
+        color: #ccc;
+        margin: 0 5px;
+        margin-top: 20px;
+        padding: 12px 20px;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        border: 1px solid rgba(0,0,0,0.8);
+        outline: none;
+        transition: all 200ms ease;
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}
+
+
+/* Wave Animation */
+.wvC {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1
+}
+
+.wvS {
+    position: relative
+}
+
+.wvS .waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    min-height: 100px;
+    max-height: 150px
+}
+
+.wvH {
+    position: relative;
+    height: 0;
+    background: rgba(0,0,0,.6);
+    animation: waveHd 7s infinite
+}
+
+.plx > use {
+    fill: rgba(0,0,0,.6);
+    animation: waveMove 25s cubic-bezier(.55,.5,.45,.5) infinite
+}
+
+.plx > use:nth-child(1) {
+    opacity: .7;
+    animation-delay: -2s;
+    animation-duration: 7s
+}
+
+.plx > use:nth-child(2) {
+    opacity: .5;
+    animation-delay: -3s;
+    animation-duration: 10s
+}
+
+.plx > use:nth-child(3) {
+    opacity: .3;
+    animation-delay: -4s;
+    animation-duration: 13s
+}
+
+.plx > use:nth-child(4) {
+    opacity: 1;
+    animation-delay: -5s;
+    animation-duration: 20s
+}
+
+@media (max-width:896px) {
+    .wvH {
+        animation: waveHm 7s infinite
+    }}
+
+.drK .wvH {
+    background: #343435
+}
+
+.drK .plx > use {
+    fill: #343435
+}
+
+@keyframes waveMove {
+    0% {
+        transform: translate3d(-90px,0,0)
+    }
+
+    100% {
+        transform: translate3d(85px,0,0)
+    }}
+
+@keyframes waveHm {
+    0% {
+        height: 0
+    }
+
+    35%,65% {
+        height: 200px
+    }
+
+    100% {
+        height: 0
+    }}
+
+@keyframes waveHd {
+    0% {
+        height: 0
+    }
+
+    35%,65% {
+        height: 100px
+    }
+
+    100% {
+        height: 0
+    }}
